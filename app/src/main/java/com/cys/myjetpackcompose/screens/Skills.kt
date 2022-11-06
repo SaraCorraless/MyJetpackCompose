@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import com.cys.myjetpackcompose.navigation.AppNavigation
+import com.cys.myjetpackcompose.navigation.AppScreens
 
 @Composable
 fun SkillsScreem(navController: NavController){
@@ -28,7 +29,9 @@ fun BodyContentSkills(navController: NavController){
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(text = "Skills de Sara")
-        Button(onClick = { /*TODO*/ }) {
+        Button(onClick = {
+            navController.navigate(route = AppScreens.ProfileScreen.route)
+        }) {
             Text(text = "Skills")
         }
     }

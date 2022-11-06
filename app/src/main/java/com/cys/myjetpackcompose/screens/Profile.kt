@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import com.cys.myjetpackcompose.navigation.AppNavigation
+import com.cys.myjetpackcompose.navigation.AppScreens
 
 
 @Composable
@@ -31,7 +32,9 @@ fun BodyContentProfile(navController: NavController){
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(text = "Perfil de Sara")
-        Button(onClick = { /*TODO*/ }) {
+        Button(onClick = {
+            navController.navigate(route =  AppScreens.SkillsScreen.route)
+        }) {
             Text(text = "Perfil")
         }
     }
