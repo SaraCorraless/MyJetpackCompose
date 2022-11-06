@@ -60,11 +60,27 @@ fun BodyContentProfile(navController: NavController){
         }
         Button(onClick = {
             navController.navigate(route = AppScreens.SkillsScreen.route)
-        },
-        Modifier.padding(top = 100.dp)
+            },
+            Modifier.padding(top = 50.dp)
             ) {
             Text(text = "Skills")
         }
+        Button(onClick = {
+
+        },
+            Modifier.padding(top = 20.dp)
+        ) {
+            Text(text = "My proyects")
+        }
+
+        Button(onClick = {
+
+        },
+            Modifier.padding(top = 20.dp)
+        ) {
+            Text(text = "About me")
+        }
+
 
 
     }
